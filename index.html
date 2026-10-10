@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rol & Dados - Tienda de Aventuras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <h1>🎲 Rol & Dados</h1>
+            <p>Tu portal al mundo de la fantasía</p>
+        </div>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#multimedia">Reseña en Audio</a></li>
+                <li><a href="#resenas">Reseñas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero-section">
+            <h2>Forja tus propias historias</h2>
+            <p>Encuentra los mejores dados artesanales, manuales de rol y accesorios épicos para tus campañas.</p>
+            <a href="#productos" class="btn-cta">Ver Productos</a>
+        </section>
+        <section id="productos" class="productos-section">
+            <h2>Nuestros Productos</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./assets/Imagen dados.jpg" alt="Set de Dados de Resina">
+                    <h3>Set de Dados Épicos (Resina)</h3>
+                    <p>Set de 7 dados poliédricos artesanales con inclusiones brillantes.</p>
+                    <span class="price">$15.000</span>
+                </div>
+                <div class="card">
+                    <img src="./assets/Manual.JPG" alt="Manual de Rol">
+                    <h3>Manual Básico de Rol</h3>
+                    <p>Guía completa con reglas, creación de personajes y calabozos.</p>
+                    <span class="price">$35.000</span>
+                </div>
+                <div class="card">
+                    <img src="./assets/Bandeja tira dados.jpg" alt="Bandeja para Dados">
+                    <h3>Bandeja de Cuero Plegable</h3>
+                    <p>Protege tus mesas y asegura tiradas justas con estilo medieval.</p>
+                    <span class="price">$12.000</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Multimedia (Audio) -->
+        <section id="multimedia" class="multimedia-section">
+            <h2>Audio-Reseña de Juegos</h2>
+            <p>Escucha nuestro análisis una campaña en el mundo HP Lovercraft:</p>
+            <div class="audio-container">
+                <audio controls>
+                    <source src="./assets/Tinta_de_sangre.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+            </div>
+        </section>
+
+        <!-- Sección Reseñas -->
+        <section id="resenas" class="resenas-section">
+            <h2>Lo que dicen los Aventureros</h2>
+            <div class="grid-resenas">
+                <div class="resena-item">
+                    <p>"Los dados de resina superaron mis expectativas. Ruedan excelente y el envío fue rapidísimo."</p>
+                    <span>- Marcos G. (Master de Rol)</span>
+                </div>
+                <div class="resena-item">
+                    <p>"La bandeja de cuero es hermosa y de muy buena calidad. ¡Mis jugadores están encantados!"</p>
+                    <span>- Valeria S.</span>
+                </div>
+                <div class="resena-item">
+                    <p>"Excelente atención y los manuales llegaron impecables. Definitivamente volveré a comprar."</p>
+                    <span>- Lucas R.</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contacto" class="contacto-section">
+            <h2>Contáctanos</h2>
+            <p>¿Tenés alguna duda sobre los juegos o querés encargar un set personalizado? Escribinos.</p>
+            <form action="https://formspree.io/f/mnpjvjva" method="POST" class="contacto-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Rol & Dados - Todos los derechos reservados. Desarrollado por José B. Vedia.</p>
+    </footer>
+
+</body>
+</html>
